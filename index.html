@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>くらしの情報</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="dashboard.js" defer></script>
+  </head>
+  <body class="dashboard-page">
+    <main class="dashboard">
+      <h1>くらしの情報</h1>
+
+      <section class="day-card">
+        <h2 class="day-date" id="today-date"></h2>
+
+        <section class="info-card weather-card">
+          <span class="weather-icon" id="today-weather-icon" aria-hidden="true">…</span>
+          <h3>天気</h3>
+          <p class="place">上三川町付近</p>
+          <p class="main-info" id="today-weather">読み込んでいます…</p>
+          <p id="today-temperature"></p>
+        </section>
+
+        <section class="info-card garbage-card">
+          <h3>ごみ</h3>
+          <p class="main-info" id="today-garbage"></p>
+        </section>
+      </section>
+
+      <section class="day-card">
+        <h2 class="day-date" id="tomorrow-date"></h2>
+
+        <section class="info-card weather-card">
+          <span class="weather-icon" id="tomorrow-weather-icon" aria-hidden="true">…</span>
+          <h3>天気</h3>
+          <p class="place">上三川町付近</p>
+          <p class="main-info" id="tomorrow-weather">読み込んでいます…</p>
+          <p id="tomorrow-temperature"></p>
+        </section>
+
+        <section class="info-card garbage-card">
+          <h3>ごみ</h3>
+          <p class="main-info" id="tomorrow-garbage"></p>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
